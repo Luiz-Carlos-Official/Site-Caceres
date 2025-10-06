@@ -1,0 +1,102 @@
+:root {
+    --cor1: #69FFF1;
+    --cor2: #63D471;
+    --cor3: #63A46C;
+    --cor4: #6A7152;
+    --cor5: #233329;
+}
+
+@media(min-width: 1024px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+        background-color: var(--cor4);
+    }
+
+    header {
+        background: linear-gradient(to right, var(--cor2), var(--cor3));
+        padding: 25px;
+    }
+
+    header h1 {
+        color: white;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.755);
+        text-align: center;
+        font-size: 2.9em;
+    }
+
+    .menu {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 90px;
+    }
+
+    .menu a {
+        text-decoration: none;
+        margin-top: 30px;
+        color: white;
+        font-weight: 900;
+        background-color: var(--cor5);
+        padding: 5px;
+        border-radius: 8px;
+    }
+
+    .menu a:hover {
+        color: var(--cor5);
+        background-color: white;
+    }
+
+    main {
+        margin: 0px 40px;
+        background-color: white;
+        padding-bottom: 30px;
+        box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.332);
+    }
+
+    .titulo {
+        text-align: center;
+        padding: 20px;
+        color: var(--cor5);
+        font-size: 1.6em;
+        font-weight: 800;
+    }
+
+    .img {
+        display: flex;
+        justify-content: center;
+        margin: 25px 0px;
+    }
+
+    .img img {
+        width: 80%;
+        border-radius: 18px;
+        box-shadow: 0 10px 22px rgba(0,0,0,0.35);
+        transition: transform 0.45s ease, box-shadow 0.3s ease;
+    }
+
+    .img img:hover {
+        transform: scale(1.03);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.4);
+    }
+
+    .texto {
+        text-align: justify;
+        letter-spacing: 0.2px;
+        padding: 0px 80px;
+    }
+
+    footer {
+        background: linear-gradient(to right, var(--cor2), var(--cor3));
+        padding: 30px;
+        text-align: center;
+        color: white;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.77);
+    }
+}
